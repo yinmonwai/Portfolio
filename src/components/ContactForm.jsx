@@ -30,7 +30,7 @@ export default function ContactForm() {
     setTimeout(() => setSubmitted(false), 5000);
   };
 
-  // Social links (replace with yours)
+  
   const socialLinks = {
     facebook: "https://facebook.com/",
     youtube: "https://youtube.com/",
