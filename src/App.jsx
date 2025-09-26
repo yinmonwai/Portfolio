@@ -13,7 +13,7 @@ import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
-    <Box sx={{ background: "linear-gradient(135deg, #162a3eff, #254b71ff)" }}>
+    <Box sx={{ background: "linear-gradient(135deg, #1e130c, #9a8478)" }}>
       <Navbar />
 
       {/* Hero Section */}
@@ -31,8 +31,8 @@ export default function App() {
               src={profileImg}
               alt="Profile"
               style={{
-                width: 200,
-                height: 200,
+                width: 150,
+                height: 150,
                 objectFit: "cover",
                 border: "3px solid white",
                 borderRadius: "50%",
@@ -42,10 +42,10 @@ export default function App() {
 
           {/* Text Content */}
           <Grid item xs={12} md={8} sx={{ textAlign: { xs: "center", md: "left" } }}>
-            <Typography variant="h3" fontWeight="bold">
+            <Typography variant="h3" >
               Hi, I’m Yin Mon Wai
             </Typography>
-            <Typography variant="h3" fontWeight="bold">
+            <Typography variant="h3">
               Full Stack Developer
             </Typography>
             <Typography variant="h6" sx={{ mt: 2 }}>
@@ -72,9 +72,9 @@ export default function App() {
           <Grid item xs={12} md={12} id="work">
             <WorkExperience />
           </Grid>
-          <Grid item xs={12} md={12} id="projects">
+          {/* <Grid item xs={12} md={12} id="projects">
             <Projects />
-          </Grid>
+          </Grid> */}
           <Grid item xs={12} md={12} id="certificates">
             <Certificates />
           </Grid>

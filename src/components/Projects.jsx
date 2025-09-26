@@ -8,24 +8,24 @@ import {
   CardMedia,
   Button,
 } from "@mui/material";
-import onlineshop from '../assets/onlineshop.jpg';
-import ecommerce1 from '../assets/ecommerce1.jpg';
+
+import portfolio from '../assets/portfolio1.jpg';
 
 const projectData = [
   {
-    title: "Shop Website",
+    title: "My Portfolio",
     description:
       "A personal portfolio site built with React",
-       image: onlineshop,
-     link: "https://online-shop-git-master-yinmonwais-projects.vercel.app/",
+       image: portfolio,
+     link: "https://my-portfolio-liard-psi-28.vercel.app/",
   },
-  {
-    title: "E-commerce Website",
-    description:
-      "Admin dashboard for managing products, orders, and users with charts.",
-    image: ecommerce1,
-    link: "#",
-  },
+  // {
+  //   title: "E-commerce Website",
+  //   description:
+  //     "Admin dashboard for managing products, orders, and users with charts.",
+  //   image: ecommerce1,
+  //   link: "#",
+  // },
 ];
 
 export default function Projects() {

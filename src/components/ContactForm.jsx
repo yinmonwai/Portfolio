@@ -103,7 +103,8 @@ export default function ContactForm() {
             sx={{
               mt: 2,
               px: 4,
-              bgcolor: "#8e2de2",
+              color:"#ffffff",
+              bgcolor: "#201d23ff",
               ":hover": { bgcolor: "#4a00e0" },
               alignSelf: { xs: "center", md: "flex-start" },
             }}
@@ -117,7 +118,7 @@ export default function ContactForm() {
           sx={{
             flex: 1,
             p: { xs: 3, md: 5 },
-            background: "linear-gradient(135deg, #522088ff, #233e6dff)",
+            background: "#453b34ff",
             color: "white",
             display: "flex",
             flexDirection: "column",
@@ -128,7 +129,7 @@ export default function ContactForm() {
           {/* Phone */}
           <Box display="flex" alignItems="center" gap={1} flexWrap="wrap">
             <Link
-              href="tel:+95754472496"
+              href="tel:+959754472496"
               underline="none"
               color="inherit"
               display="flex"
@@ -138,7 +139,7 @@ export default function ContactForm() {
             >
               <PhoneIcon sx={{ fontSize: { xs: 20, sm: 24 } }} />
               <Typography sx={{ fontSize: { xs: 14, sm: 16 } }}>
-                +95 754472496
+                +95 9754472496
               </Typography>
             </Link>
           </Box>
@@ -190,7 +191,7 @@ export default function ContactForm() {
               { icon: <TwitterIcon fontSize="large" />, href: socialLinks.twitter, color: "#1DA1F2" },
               { icon: <GoogleIcon fontSize="large" />, href: socialLinks.google, color: "#DB4437" },
               { icon: <LinkedInIcon fontSize="large" />, href: socialLinks.linkedin, color: "#0A66C2" },
-              { icon: <GitHubIcon fontSize="large" />, href: socialLinks.github, color: "#333" },
+              { icon: <GitHubIcon fontSize="large" />, href: socialLinks.github, color: "#8e8b8bff" },
             ].map((social, i) => (
               <IconButton
                 key={i}

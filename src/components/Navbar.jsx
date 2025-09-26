@@ -18,9 +18,9 @@ import cvFile from "../assets/cv.pdf";
 const sections = [
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
-  { id: "experience", label: "Worked On Projects" },
+  { id: "experience", label: "Projects" },
   { id: "work", label: "Work Experience" },
-  { id: "projects", label: "Projects" },
+  // { id: "projects", label: "Projects" },
   { id: "certificates", label: "Education" },
   { id: "contact", label: "Contact" },
 ];
@@ -77,7 +77,7 @@ export default function Navbar() {
 
   return (
     <>
-      <AppBar position="fixed" sx={{background: "linear-gradient(135deg, #162a3eff, #254b71ff)" }}>
+      <AppBar position="fixed" sx={{ background: "linear-gradient(135deg, #1e130c, #9a8478)" }}>
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography variant="h6" sx={{ fontWeight: "bold", color: "#ffffff" }}>
             My Portfolio
@@ -106,10 +106,10 @@ export default function Navbar() {
             {/* Download CV */}
             <Button
               variant="contained"
-              color="secondary"
+            
               href={cvFile}
               download
-              sx={{ ml: 2 }}
+              sx={{ ml: 2,color: "white", backgroundColor:"#242222ff" }}
             >
               Download CV
             </Button>
