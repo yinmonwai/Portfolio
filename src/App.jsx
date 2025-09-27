@@ -13,7 +13,7 @@ import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
-    <Box sx={{ background: "linear-gradient(135deg, #1e130c, #9a8478)" }}>
+    <Box sx={{ background: "linear-gradient(135deg, #085078, #9a8478)" }}>
       <Navbar />
 
       {/* Hero Section */}

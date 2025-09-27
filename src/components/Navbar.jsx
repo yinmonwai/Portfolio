@@ -77,7 +77,7 @@ export default function Navbar() {
 
   return (
     <>
-      <AppBar position="fixed" sx={{ background: "linear-gradient(135deg, #1e130c, #9a8478)" }}>
+      <AppBar position="fixed" sx={{ background: "linear-gradient(135deg,  #085078, #9a8478)" }}>
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography variant="h6" sx={{ fontWeight: "bold", color: "#ffffff" }}>
             My Portfolio
@@ -106,10 +106,9 @@ export default function Navbar() {
             {/* Download CV */}
             <Button
               variant="contained"
-            
               href={cvFile}
               download
-              sx={{ ml: 2,color: "white", backgroundColor:"#242222ff" }}
+              sx={{ ml: 2,color: "white", backgroundColor:"#085078" }}
             >
               Download CV
             </Button>

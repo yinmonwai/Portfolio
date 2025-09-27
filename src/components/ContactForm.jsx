@@ -104,7 +104,7 @@ export default function ContactForm() {
               mt: 2,
               px: 4,
               color:"#ffffff",
-              bgcolor: "#201d23ff",
+              bgcolor: "#085078",
               ":hover": { bgcolor: "#4a00e0" },
               alignSelf: { xs: "center", md: "flex-start" },
             }}
@@ -118,7 +118,7 @@ export default function ContactForm() {
           sx={{
             flex: 1,
             p: { xs: 3, md: 5 },
-            background: "#453b34ff",
+            background: "#536976",
             color: "white",
             display: "flex",
             flexDirection: "column",
@@ -191,7 +191,7 @@ export default function ContactForm() {
               { icon: <TwitterIcon fontSize="large" />, href: socialLinks.twitter, color: "#1DA1F2" },
               { icon: <GoogleIcon fontSize="large" />, href: socialLinks.google, color: "#DB4437" },
               { icon: <LinkedInIcon fontSize="large" />, href: socialLinks.linkedin, color: "#0A66C2" },
-              { icon: <GitHubIcon fontSize="large" />, href: socialLinks.github, color: "#8e8b8bff" },
+              { icon: <GitHubIcon fontSize="large" />, href: socialLinks.github, color: "#424040ff" },
             ].map((social, i) => (
               <IconButton
                 key={i}

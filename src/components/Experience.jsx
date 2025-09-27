@@ -112,7 +112,7 @@ const projectData = [
                       </Typography>
                       <Button
                         variant="contained"
-                        sx={{color: "white", backgroundColor:"#242222ff"}}
+                        sx={{color: "white", backgroundColor:"#085078"}}
                         size="small"
                         href={project.link}
                         target="_blank"
