@@ -17,15 +17,9 @@ const projectData = [
     description:
       "A personal portfolio site built with React",
        image: portfolio,
-     link: "https://my-portfolio-liard-psi-28.vercel.app/",
+     link: "https://portfolio-nu-nine-egwkgrko0t.vercel.app/",
   },
-  // {
-  //   title: "E-commerce Website",
-  //   description:
-  //     "Admin dashboard for managing products, orders, and users with charts.",
-  //   image: ecommerce1,
-  //   link: "#",
-  // },
+ 
 ];
 
 export default function Projects() {
