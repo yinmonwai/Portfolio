@@ -10,6 +10,7 @@ export default function IntroSection({ mode = "light" }) {
       sx={{
         position: "relative",
         minHeight: "100vh",
+        borderRadius: 15,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -35,7 +36,7 @@ export default function IntroSection({ mode = "light" }) {
           width: "400px",
           height: "400px",
           borderRadius: "50%",
-          background: "linear-gradient(135deg, #9EE493, #7ed957)",
+          // background: "linear-gradient(135deg, #9EE493, #7ed957)",
           filter: "blur(120px)",
           zIndex: 0,
         }}
@@ -51,7 +52,7 @@ export default function IntroSection({ mode = "light" }) {
           width: "400px",
           height: "400px",
           borderRadius: "50%",
-          background: "linear-gradient(135deg, #00e0ff, #0077ff)",
+          // background: "linear-gradient(135deg, #00e0ff, #0077ff)",
           filter: "blur(120px)",
           zIndex: 0,
         }}
@@ -95,8 +96,9 @@ export default function IntroSection({ mode = "light" }) {
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.5, duration: 0.9 }}
                   style={{
-                    color: "#9EE493",
-                    borderBottom: "3px solid #9EE493",
+                    // color: "#9EE493",
+                    // borderBottom: "3px solid #9EE493",
+                    color: mode === "light" ? "#1976d2" : "#90caf9",
                     display: "inline-block",
                   }}
                 >
@@ -136,7 +138,7 @@ export default function IntroSection({ mode = "light" }) {
                 download
                 sx={{
                   mt: 4,
-                  backgroundColor: "#9EE493",
+                  backgroundColor: mode === "light" ? "#1976d2" : "#90caf9",
                   color: "#000",
                   px: { xs: 3, sm: 4 },
                   py: 1.1,
@@ -150,22 +152,7 @@ export default function IntroSection({ mode = "light" }) {
               </Button>
             </motion.div>
           </Grid>
-          {/* ===== Right Image (optional) ===== */}
-          {/* <Grid item xs={12} md={5}>
-            <motion.img
-              src={profileImg}
-              alt="Profile"
-              style={{
-                width: "100%",
-                maxWidth: "350px",
-                borderRadius: "50%",
-                boxShadow: "0 0 30px rgba(158,228,147,0.4)",
-              }}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.6, duration: 0.8 }}
-            />
-          </Grid> */}
+          
         </Grid>
       </Container>
     </Box>

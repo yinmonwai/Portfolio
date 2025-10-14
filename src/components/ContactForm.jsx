@@ -227,20 +227,24 @@ import {
   Link,
   Alert,
   Container,
+  useTheme,
 } from "@mui/material";
-import PhoneIcon from "@mui/icons-material/Phone";
-import EmailIcon from "@mui/icons-material/Email";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import GoogleIcon from "@mui/icons-material/Google";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import {
+  Phone as PhoneIcon,
+  Email as EmailIcon,
+  LocationOn as LocationOnIcon,
+  Facebook as FacebookIcon,
+  YouTube as YouTubeIcon,
+  Instagram as InstagramIcon,
+  Twitter as TwitterIcon,
+  Google as GoogleIcon,
+  LinkedIn as LinkedInIcon,
+  GitHub as GitHubIcon,
+} from "@mui/icons-material";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const theme = useTheme();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -261,6 +265,7 @@ export default function ContactForm() {
 
   return (
     <Container
+      id="contact"
       maxWidth="lg"
       sx={{
         display: "flex",
@@ -274,10 +279,10 @@ export default function ContactForm() {
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           width: "100%",
-          bgcolor: "white",
           borderRadius: 3,
           overflow: "hidden",
           boxShadow: 6,
+          bgcolor: theme.palette.background.paper,
         }}
       >
         {/* Left Form Section */}
@@ -290,11 +295,16 @@ export default function ContactForm() {
             display: "flex",
             flexDirection: "column",
             gap: 2,
-            width: "100%",
           }}
         >
-          <Typography variant="h5" fontWeight="bold" mb={1} textAlign="center">
-            Contact Us
+          <Typography
+            variant="h5"
+            fontWeight="bold"
+            mb={1}
+            textAlign="center"
+            color="text.primary"
+          >
+            Contact Me
           </Typography>
 
           {submitted && (
@@ -321,9 +331,6 @@ export default function ContactForm() {
             sx={{
               mt: 2,
               px: 4,
-              color: "#ffffff",
-              bgcolor: "#9EE493",
-              ":hover": { bgcolor: "#4a00e0" },
               alignSelf: { xs: "center", md: "flex-start" },
             }}
           >
@@ -336,77 +343,46 @@ export default function ContactForm() {
           sx={{
             flex: 1,
             p: { xs: 3, md: 5 },
-            background:
-              "linear-gradient(145deg, rgba(53, 53, 61, 0.9), rgba(59, 59, 71, 0.9))",
-            color: "white",
+            background: theme.palette.mode === "dark"
+              ? "linear-gradient(145deg, rgba(40,40,45,0.95), rgba(25,25,30,0.95))"
+              : "linear-gradient(145deg, rgba(240,240,245,0.95), rgba(220,220,230,0.95))",
+            color: theme.palette.text.primary,
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             gap: 3,
           }}
         >
-          {/* Phone - Clickable Call Icon + Number */}
-          <Box
-            display="flex"
-            alignItems="center"
-            gap={1}
-            flexWrap="wrap"
-            sx={{ justifyContent: { xs: "center", md: "flex-start" } }}
-          >
-            <IconButton
-              component="a"
-              href="tel:+959754472496"
-              sx={{
-                color: "#9EE493",
-                bgcolor: "rgba(255,255,255,0.1)",
-                "&:hover": { bgcolor: "#9EE493", color: "black" },
-                transition: "all 0.3s ease",
-              }}
-            >
-              <PhoneIcon sx={{ fontSize: { xs: 22, sm: 26 } }} />
-            </IconButton>
-
+          {/* Phone */}
+          <Box display="flex" alignItems="center" gap={1} flexWrap="wrap">
             <Link
               href="tel:+959754472496"
               underline="none"
               color="inherit"
-              sx={{
-                fontSize: { xs: 14, sm: 16 },
-                "&:hover": { color: "#9EE493" },
-              }}
+              display="flex"
+              alignItems="center"
+              gap={1}
+              sx={{ "&:hover": { color: theme.palette.primary.main } }}
             >
-              +95 9754472496
+              <PhoneIcon />
+              <Typography variant="body2">+95 9754472496</Typography>
             </Link>
           </Box>
 
           {/* Email */}
           <Box display="flex" alignItems="center" gap={1} flexWrap="wrap">
-             <IconButton
-              component="a"
-              href="mailto:yinmonwai078@gmail.com"
-              sx={{
-                color: "#9EE493",
-                bgcolor: "rgba(120, 116, 116, 0.1)",
-                "&:hover": { bgcolor: "#9EE493", color: "black" },
-                transition: "all 0.3s ease",
-              }}
-            >
-              <EmailIcon sx={{ fontSize: { xs: 22, sm: 26 } }} />
-            </IconButton>
-
             <Link
               href="mailto:yinmonwai078@gmail.com"
               underline="none"
               color="inherit"
-
-              sx={{
-                fontSize: { xs: 15, sm: 16 },
-                "&:hover": { color: "#9EE493" },
-              }}
+              display="flex"
+              alignItems="center"
+              gap={1}
+              sx={{ "&:hover": { color: theme.palette.primary.main } }}
             >
-             yinmonwai078@gmail.com
+              <EmailIcon />
+              <Typography variant="body2">yinmonwai078@gmail.com</Typography>
             </Link>
-
           </Box>
 
           {/* Location */}
@@ -420,31 +396,25 @@ export default function ContactForm() {
               display="flex"
               alignItems="center"
               gap={1}
-              sx={{ "&:hover": { color: "#9EE493" } }}
+              sx={{ "&:hover": { color: theme.palette.primary.main } }}
             >
-              <LocationOnIcon sx={{ fontSize: { xs: 20, sm: 24 } }} />
-              <Typography sx={{ fontSize: { xs: 14, sm: 16 } }}>
+              <LocationOnIcon />
+              <Typography variant="body2">
                 SanChaung Township, Yangon, Myanmar
               </Typography>
             </Link>
           </Box>
 
           {/* Social Icons */}
-          <Box
-            display="flex"
-            gap={2}
-            mt={2}
-            flexWrap="wrap"
-            sx={{ justifyContent: { xs: "center", md: "flex-start" } }}
-          >
+          <Box display="flex" gap={2} mt={2} flexWrap="wrap">
             {[
-              { icon: <FacebookIcon fontSize="large" />, href: socialLinks.facebook, color: "#1877F2" },
-              { icon: <YouTubeIcon fontSize="large" />, href: socialLinks.youtube, color: "#FF0000" },
-              { icon: <InstagramIcon fontSize="large" />, href: socialLinks.instagram, color: "#E4405F" },
-              { icon: <TwitterIcon fontSize="large" />, href: socialLinks.twitter, color: "#1DA1F2" },
-              { icon: <GoogleIcon fontSize="large" />, href: socialLinks.google, color: "#DB4437" },
-              { icon: <LinkedInIcon fontSize="large" />, href: socialLinks.linkedin, color: "#0A66C2" },
-              { icon: <GitHubIcon fontSize="large" />, href: socialLinks.github, color: "#424040ff" },
+              { icon: <FacebookIcon />, href: socialLinks.facebook },
+              { icon: <YouTubeIcon />, href: socialLinks.youtube },
+              { icon: <InstagramIcon />, href: socialLinks.instagram },
+              { icon: <TwitterIcon />, href: socialLinks.twitter },
+              { icon: <GoogleIcon />, href: socialLinks.google },
+              { icon: <LinkedInIcon />, href: socialLinks.linkedin },
+              { icon: <GitHubIcon />, href: socialLinks.github },
             ].map((social, i) => (
               <IconButton
                 key={i}
@@ -453,9 +423,12 @@ export default function ContactForm() {
                 target="_blank"
                 rel="noopener"
                 sx={{
-                  color: social.color,
+                  color: theme.palette.text.secondary,
                   transition: "all 0.3s ease",
-                  "&:hover": { transform: "scale(1.2)", color: "white" },
+                  "&:hover": {
+                    transform: "scale(1.2)",
+                    color: theme.palette.primary.main,
+                  },
                 }}
               >
                 {social.icon}
@@ -467,3 +440,5 @@ export default function ContactForm() {
     </Container>
   );
 }
+
+

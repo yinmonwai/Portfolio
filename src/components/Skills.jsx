@@ -254,8 +254,155 @@
 // }
 
 
+// import React from "react";
+// import { Box, Typography } from "@mui/material";
+// import {
+//   FaReact,
+//   FaNodeJs,
+//   FaLaravel,
+//   FaBootstrap,
+//   FaHtml5,
+//   FaCss3Alt,
+//   FaVuejs,
+//   FaGitAlt,
+// } from "react-icons/fa";
+// import {
+//   SiMongodb,
+//   SiPostgresql,
+//   SiMui,
+//   SiJavascript,
+//   SiTypescript, 
+//   SiMysql,
+//   SiLivewire,
+//   SiTailwindcss,
+//   SiNextdotjs,  
+//   SiAntdesign,  
+//   SiShadcnui,
+// } from "react-icons/si";
+// import { motion } from "framer-motion";
+
+// const skills = [
+
+//   { name: "HTML5", icon: <FaHtml5 color="#e34f26" /> },
+//   { name: "CSS3", icon: <FaCss3Alt color="#1572b6" /> },
+//   { name: "Bootstrap", icon: <FaBootstrap color="#7952b3" /> },
+//   { name: "TailwindCSS", icon: <SiTailwindcss color="#38b2ac" /> },
+//   { name: "JavaScript", icon: <SiJavascript color="#f0db4f" /> },
+//   { name: "Vue", icon: <FaVuejs color="#4fc08d" /> },
+//   { name: "React", icon: <FaReact color="#61dafb" /> },
+//   { name: "MUI", icon: <SiMui color="#007fff" /> },
+//   { name: "Ant Design", icon: <SiAntdesign color="#0170fe" /> },
+//   { name: "shadcn/ui", icon: <SiShadcnui color="#f7ececff" /> },
+//   { name: "Laravel", icon: <FaLaravel color="#ff2d20" /> },
+//   { name: "Livewire", icon: <SiLivewire color="#0f6ad6" /> },
+//   { name: "MySQL", icon: <SiMysql color="#4479a1" /> },
+//   { name: "TypeScript", icon: <SiTypescript color="#3178c6" /> }, 
+//   { name: "Next JS", icon: <SiNextdotjs color="#61dafb" /> },
+//   { name: "Node.js", icon: <FaNodeJs color="#3c873a" /> },
+//   { name: "Express", icon: <FaNodeJs color="#000" /> },
+//   { name: "PostgreSQL", icon: <SiPostgresql color="#336791" /> },
+//   { name: "MongoDB", icon: <SiMongodb color="#4db33d" /> },
+//   { name: "Git", icon: <FaGitAlt color="#f1502f" /> },
+// ];
+
+// export default function Skills() {
+//   const doubledSkills = [...skills, ...skills];
+
+//   const renderMarqueeRow = (reverse = false) => (
+//     <motion.div
+//       style={{
+//         display: "flex",
+//         gap: "2.5rem",
+//         marginBottom: "2rem",
+//       }}
+//       animate={{
+//         x: reverse ? ["-50%", "0%"] : ["0%", "-50%"],
+//       }}
+//       transition={{
+//         duration: 5,
+//         ease: "linear",
+//         repeat: Infinity,
+//       }}
+//     >
+//       {doubledSkills.map((skill, index) => (
+//         <Box
+//           key={`${skill.name}-${index}`}
+//           sx={{
+//             flexShrink: 0,
+//             display: "flex",
+//             flexDirection: "column",
+//             alignItems: "center",
+//             justifyContent: "center",
+//             transition: "transform 0.3s ease",
+//             "&:hover": {
+//               transform: "scale(1.15)",
+//             },
+//           }}
+//         >
+//           <Box sx={{ fontSize: { xs: "3rem", sm: "3.5rem", md: "3rem" } }}>
+//             {skill.icon}
+//           </Box>
+//           <Typography
+//             variant="body2"
+//             sx={{
+//               mt: 1,
+//               fontWeight: 700,
+//               fontSize: { xs: "0.8rem", sm: "0.9rem" },
+//               color: "#d0d0d0",
+//             }}
+//           >
+//             {skill.name}
+//           </Typography>
+//         </Box>
+//       ))}
+//     </motion.div>
+//   );
+
+//   return (
+//     <Box
+//       sx={{
+//         py: { xs: 6, md: 10 },
+//         px: { xs: 2, sm: 6 },
+//         textAlign: "center",
+//          borderRadius: 20,
+//       }}
+//     >
+//       <Typography
+//         variant="h4"
+//         sx={{
+//           fontWeight: 700,
+//           mb: 2,
+//           textAlign: "center",
+//         }}
+//       >
+//         Technologies I Work With
+//       </Typography>
+
+//       <Typography
+//         variant="body1"
+//         sx={{
+//           mb: 6,
+//           color: "#c0c0c0",
+//           maxWidth: "700px",
+//           mx: "auto",
+//         }}
+//       >
+//         I’m proficient in these modern technologies and frameworks and always
+//         eager to learn new ones to expand my skill set.
+//       </Typography>
+
+//       {/* Two parallel moving rows */}
+//       <Box sx={{ width: "100%", overflow: "hidden" }}>
+//         {renderMarqueeRow(false)}
+//         {renderMarqueeRow(true)}
+//       </Box>
+//     </Box>
+//   );
+// }
+
+
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import {
   FaReact,
   FaNodeJs,
@@ -271,41 +418,43 @@ import {
   SiPostgresql,
   SiMui,
   SiJavascript,
-  SiTypescript, 
+  SiTypescript,
   SiMysql,
   SiLivewire,
   SiTailwindcss,
-  SiNextdotjs,  
-  SiAntdesign,  
+  SiNextdotjs,
+  SiAntdesign,
   SiShadcnui,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const skills = [
-
   { name: "HTML5", icon: <FaHtml5 color="#e34f26" /> },
   { name: "CSS3", icon: <FaCss3Alt color="#1572b6" /> },
   { name: "Bootstrap", icon: <FaBootstrap color="#7952b3" /> },
   { name: "TailwindCSS", icon: <SiTailwindcss color="#38b2ac" /> },
   { name: "JavaScript", icon: <SiJavascript color="#f0db4f" /> },
+  { name: "TypeScript", icon: <SiTypescript color="#3178c6" /> },
   { name: "Vue", icon: <FaVuejs color="#4fc08d" /> },
   { name: "React", icon: <FaReact color="#61dafb" /> },
+  { name: "Next.js", icon: <SiNextdotjs color="#ffffff" /> },
   { name: "MUI", icon: <SiMui color="#007fff" /> },
   { name: "Ant Design", icon: <SiAntdesign color="#0170fe" /> },
-  { name: "shadcn/ui", icon: <SiShadcnui color="#f7ececff" /> },
+  { name: "shadcn/ui", icon: <SiShadcnui color="#c0c0c0" /> },
   { name: "Laravel", icon: <FaLaravel color="#ff2d20" /> },
   { name: "Livewire", icon: <SiLivewire color="#0f6ad6" /> },
   { name: "MySQL", icon: <SiMysql color="#4479a1" /> },
-  { name: "TypeScript", icon: <SiTypescript color="#3178c6" /> }, 
-  { name: "Next JS", icon: <SiNextdotjs color="#61dafb" /> },
   { name: "Node.js", icon: <FaNodeJs color="#3c873a" /> },
-  { name: "Express", icon: <FaNodeJs color="#000" /> },
+  { name: "Express", icon: <FaNodeJs color="#000000" /> },
   { name: "PostgreSQL", icon: <SiPostgresql color="#336791" /> },
   { name: "MongoDB", icon: <SiMongodb color="#4db33d" /> },
   { name: "Git", icon: <FaGitAlt color="#f1502f" /> },
 ];
 
 export default function Skills() {
+  const theme = useTheme();
+  const isDarkMode = theme.palette.mode === "dark";
+
   const doubledSkills = [...skills, ...skills];
 
   const renderMarqueeRow = (reverse = false) => (
@@ -319,7 +468,7 @@ export default function Skills() {
         x: reverse ? ["-50%", "0%"] : ["0%", "-50%"],
       }}
       transition={{
-        duration: 5,
+        duration: 25,
         ease: "linear",
         repeat: Infinity,
       }}
@@ -333,22 +482,24 @@ export default function Skills() {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            transition: "transform 0.3s ease",
+            cursor: "pointer",
+            transition: "all 0.3s ease",
             "&:hover": {
-              transform: "scale(1.15)",
+              transform: "scale(1.2)",
+              filter: "drop-shadow(0 0 8px rgba(255,255,255,0.4))",
             },
           }}
         >
-          <Box sx={{ fontSize: { xs: "3rem", sm: "3.5rem", md: "3rem" } }}>
+          <Box sx={{ fontSize: { xs: "2.5rem", sm: "3.5rem", md: "3rem" } }}>
             {skill.icon}
           </Box>
           <Typography
             variant="body2"
             sx={{
               mt: 1,
-              fontWeight: 700,
-              fontSize: { xs: "0.8rem", sm: "0.9rem" },
-              color: "#d0d0d0",
+              fontWeight: 600,
+              fontSize: { xs: "0.75rem", sm: "0.9rem" },
+              color: isDarkMode ? "#e0e0e0" : "#333",
             }}
           >
             {skill.name}
@@ -360,14 +511,19 @@ export default function Skills() {
 
   return (
     <Box
+      id="skills"
       sx={{
         py: { xs: 6, md: 10 },
         px: { xs: 2, sm: 6 },
         textAlign: "center",
-         borderRadius: 20,
-        // background: "linear-gradient(to bottom, #000000, #0a0a1a, #101020)",
-        // color: "white",
-        // overflow: "hidden",
+        borderRadius: 6,
+        overflow: "hidden",
+        background: isDarkMode
+          ? "linear-gradient(135deg, #303030ff 0%, #1e1e1e 100%)"
+          : "linear-gradient(135deg, #eeededff 0%, #f0f0f0 100%)",
+        boxShadow: isDarkMode
+          ? "0 0 20px rgba(255,255,255,0.05)"
+          : "0 0 20px rgba(0,0,0,0.05)",
       }}
     >
       <Typography
@@ -375,7 +531,8 @@ export default function Skills() {
         sx={{
           fontWeight: 700,
           mb: 2,
-          textAlign: "center",
+          color: isDarkMode ? "#5b74f0ff" : "#2da4e9ff",
+
         }}
       >
         Technologies I Work With
@@ -385,7 +542,7 @@ export default function Skills() {
         variant="body1"
         sx={{
           mb: 6,
-          color: "#c0c0c0",
+          color: isDarkMode ? "#b0b0b0" : "#555",
           maxWidth: "700px",
           mx: "auto",
         }}
@@ -394,7 +551,6 @@ export default function Skills() {
         eager to learn new ones to expand my skill set.
       </Typography>
 
-      {/* Two parallel moving rows */}
       <Box sx={{ width: "100%", overflow: "hidden" }}>
         {renderMarqueeRow(false)}
         {renderMarqueeRow(true)}
