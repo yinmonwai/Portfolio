@@ -584,8 +584,8 @@ export default function App() {
           </Box>
         </Container>
 
-        {/* Footer */}
-        <Footer />
+        
+        {/* <Footer /> */}
       </Box>
     </ThemeProvider>
   );

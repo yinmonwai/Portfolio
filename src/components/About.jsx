@@ -417,8 +417,8 @@ export default function About() {
                     sx={{
                       borderRadius: "50%",
                       overflow: "hidden",
-                      width: { xs: 150, sm: 200, md: 300 },
-                      height: { xs: 150, sm: 200, md: 320 },
+                      width: { xs: 100, sm: 150, md: 200 },
+                      height: { xs: 150, sm: 200, md: 200 },
                       boxShadow:
                         mode === "light"
                           ? "0 8px 30px rgba(0,0,0,0.15)"
