@@ -230,6 +230,7 @@ import myino from "../assets/myino1.jpg";
 import movas from "../assets/movas1.jpg";
 import inventory from "../assets/inventory1.jpg";
 import hrImage from "../assets/hr3.jpg";
+import wedayImage from "../assets/w.jpg";
 
 export default function Experience() {
   const theme = useTheme();
@@ -294,7 +295,7 @@ export default function Experience() {
       title: "WeDay Social Commerce Platform",
       description:
         "Built a social commerce platform using React, MUI, and a RESTful API. Enabled users to discover, share, and purchase products within a connected community.",
-      image: portfolio,
+      image: wedayImage,
     },
   ];
 
