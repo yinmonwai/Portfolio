@@ -248,9 +248,10 @@ export default function Certificates() {
           fontWeight: 700,
           textTransform: "uppercase",
           letterSpacing: 1.5,
-          background: isDark
-            ? "linear-gradient(to right, #00e5ff, #4caf50)"
-            : "linear-gradient(to right, #3f51b5, #00bcd4)",
+          // background: isDark
+          //   ? "linear-gradient(to right, #00e5ff, #4caf50)"
+          //   : "linear-gradient(to right, #3f51b5, #00bcd4)",
+          background: isDark ? "#5b74f0ff" : "#2da4e9ff",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
         }}

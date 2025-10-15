@@ -228,7 +228,7 @@ import chatbot from "../assets/chatbot.jpg";
 import geolocation from "../assets/geolocation.jpg";
 import myino from "../assets/myino1.jpg";
 import movas from "../assets/movas1.jpg";
-import inventory from "../assets/inventory1.jpg";
+import inventory from "../assets/inventory2.jpg";
 import hrImage from "../assets/hr3.jpg";
 import wedayImage from "../assets/w.jpg";
 

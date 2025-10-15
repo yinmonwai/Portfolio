@@ -425,6 +425,7 @@ import {
   SiNextdotjs,
   SiAntdesign,
   SiShadcnui,
+  SiPhp,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -441,6 +442,7 @@ const skills = [
   { name: "MUI", icon: <SiMui color="#007fff" /> },
   { name: "Ant Design", icon: <SiAntdesign color="#0170fe" /> },
   { name: "shadcn/ui", icon: <SiShadcnui color="#c0c0c0" /> },
+  { name: "PHP", icon: <SiPhp color="#777bb3" /> },
   { name: "Laravel", icon: <FaLaravel color="#ff2d20" /> },
   { name: "Livewire", icon: <SiLivewire color="#0f6ad6" /> },
   { name: "MySQL", icon: <SiMysql color="#4479a1" /> },
@@ -519,8 +521,8 @@ export default function Skills() {
         borderRadius: 6,
         overflow: "hidden",
         background: isDarkMode
-          ? "linear-gradient(135deg, #303030ff 0%, #1e1e1e 100%)"
-          : "linear-gradient(135deg, #eeededff 0%, #f0f0f0 100%)",
+          ? "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)"
+          : "linear-gradient(135deg, #fdfdfd 0%, #f0f0f0 100%)",
         boxShadow: isDarkMode
           ? "0 0 20px rgba(255,255,255,0.05)"
           : "0 0 20px rgba(0,0,0,0.05)",
