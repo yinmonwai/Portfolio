@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Container, Typography, Grid, Button } from "@mui/material";
 import { motion } from "framer-motion";
 import cvFile from "../assets/cv.pdf";
-import profileImg from "../assets/profile2.jpg";
 export default function IntroSection({ mode = "light" }) {
   return (
     <Box
@@ -18,10 +17,6 @@ export default function IntroSection({ mode = "light" }) {
         px: { xs: 2, sm: 4, md: 8 },
         py: { xs: 8, md: 0 },
         textAlign: { xs: "center", md: "left" },
-        // background:
-        //   mode === "light"
-        //     ? "radial-gradient(circle at 30% 50%, rgba(255,255,255,0.9) 0%, rgba(246,247,249,1) 100%)"
-        //     : "radial-gradient(circle at 30% 50%, #111 0%, #0a0a0a 100%)",
       }}
     >
       {/* === Animated Gradient Orbs === */}
@@ -36,7 +31,6 @@ export default function IntroSection({ mode = "light" }) {
           width: "400px",
           height: "400px",
           borderRadius: "50%",
-          // background: "linear-gradient(135deg, #9EE493, #7ed957)",
           filter: "blur(120px)",
           zIndex: 0,
         }}
@@ -52,7 +46,6 @@ export default function IntroSection({ mode = "light" }) {
           width: "400px",
           height: "400px",
           borderRadius: "50%",
-          // background: "linear-gradient(135deg, #00e0ff, #0077ff)",
           filter: "blur(120px)",
           zIndex: 0,
         }}
@@ -96,8 +89,6 @@ export default function IntroSection({ mode = "light" }) {
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.5, duration: 0.9 }}
                   style={{
-                    // color: "#9EE493",
-                    // borderBottom: "3px solid #9EE493",
                     color: mode === "light" ? "#1976d2" : "#90caf9",
                     display: "inline-block",
                   }}

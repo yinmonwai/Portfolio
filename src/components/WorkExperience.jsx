@@ -7,13 +7,13 @@ const experiences = [
   {
     role: "Web Developer",
     company: "Unity IT Solution Co. Ltd",
-    years: "2023 - 2024",
+    years: "2024 - 2025",
     logo: "/company1.png",
   },
   {
     role: "Web Developer",
     company: "MyDay Thu Kyawal Co. Ltd",
-    years: "2024 - Present",
+    years: "2025 - Present",
     logo: "/company2.png",
   },
 ];
@@ -30,7 +30,7 @@ export default function WorkExperience() {
         px: { xs: 3, sm: 8 },
         backgroundColor: isDark
           ? "rgba(18, 18, 18, 0.9)"
-          : "rgba(245, 247, 250, 0.9)",
+          : "rgba(245, 247, 250, 0.96)",
         transition: "background-color 0.5s ease",
       }}
     >
