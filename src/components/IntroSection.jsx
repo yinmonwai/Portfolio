@@ -105,7 +105,7 @@ export default function IntroSection({ mode = "light" }) {
                   fontSize: { xs: "1.05rem", sm: "1.25rem", md: "1.6rem" },
                 }}
               >
-                Full Stack Developer
+                Web Developer
               </Typography>
 
               <Typography
