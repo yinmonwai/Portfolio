@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import { motion } from "framer-motion";
 
-import portfolio from "../assets/portfolio1.jpg";
+import portfolio from "../assets/portfolio.jpg";
 import customImage from "../assets/custom2.jpg";
 import dennis from "../assets/dennis.jpg";
 import chatbot from "../assets/chatbot.jpg";
