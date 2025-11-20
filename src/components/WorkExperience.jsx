@@ -7,13 +7,13 @@ const experiences = [
   {
     role: "Web Developer",
     company: "Unity IT Solution Co. Ltd",
-    years: "2024 - 2025",
+    years: "2023 - 2024",
     logo: "/company1.png",
   },
   {
     role: "Web Developer",
     company: "MyDay Thu Kyawal Co. Ltd",
-    years: "2025 - Present",
+    years: "2024 - Present",
     logo: "/company2.png",
   },
 ];
