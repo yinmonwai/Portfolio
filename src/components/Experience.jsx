@@ -11,7 +11,6 @@ import {
   useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
-
 import portfolio from "../assets/portfolio.jpg";
 import customImage from "../assets/custom2.jpg";
 import dennis from "../assets/dennis.jpg";
@@ -34,46 +33,44 @@ export default function Experience() {
         "Designed and developed a personal portfolio website using React.js and MUI to showcase my projects and skills. Implemented responsive design and integrated contact forms for potential client inquiries.",
       image: portfolio,
       technologies: ["React.js", "Material UI"],
+      liveDemo: ["https://your-portfolio-link.com","https://github.com/yourusername/portfolio-website"], // optional
     },
     {
       title: "Geolocation Information System",
       description:
-        "Developed and maintained a geolocation information system using Vue.js, Laravel, and MySQL, allowing users to visualize geographic data through interactive maps, search, and filtering features.",
+           "Developed and maintained a geolocation information system using Vue.js, Laravel, and MySQL. Implemented region-based search and filtering functionalities, displayed user working regions on interactive maps, and built features to insert and manage geographic region data.",
       image: geolocation,
       technologies: ["Vue.js", "Laravel", "MySQL"],
     },
     {
       title: "ChatBot",
       description:
-        "Built an intelligent chatbot for Agricultural Science queries using Vue.js, Laravel, and MySQL. It provides instant, accurate answers about crops, fertilizers, and pest management using natural language understanding.",
+        "Developed and maintained an Agricultural Science chatbot using Vue.js, Laravel, and MySQL, enabling users to ask questions related to crops, farming techniques, and best practices. Built modules for data entry and management, displayed stored agricultural information to users, and processed user inputs through intelligent and interactive chat workflows.",
       image: chatbot,
       technologies: ["Vue.js", "Laravel", "MySQL"],
     },
     {
       title: "Human Resource Management System",
-      description:
-        "Developed a comprehensive HR management system using TailwindCSS, Livewire, and MySQL — enabling efficient employee data management, attendance tracking, and role-based access control.",
+      description:"Developed a comprehensive HR management system using TailwindCSS, Livewire, and MySQL — implementing employee data entry modules, finance reports, personal history reports, and other HR-related reporting features. Built export functionalities for Word and Excel formats, and supported efficient employee management, attendance tracking, and role-based access control.",
       image: hrImage,
       technologies: ["TailwindCSS", "Livewire", "MySQL"],
     },
     {
       title: "Custom Detained Goods Management System",
       description:
-        "Built a detained goods management system using TailwindCSS, Livewire, and MySQL, facilitating real-time tracking, automated notifications, and reporting for enhanced operational efficiency.",
+           "Built a comprehensive detained goods management system using TailwindCSS, Livewire, and MySQL, focused on managing cases such as illegal import of firearms. Developed data entry workflows for case creation, detained items, and officer actions, along with dynamic reporting modules that allow users to view case summaries, item records, and decision histories in real time.",
       image: customImage,
       technologies: ["TailwindCSS", "Livewire", "MySQL"],
     },
     {
       title: "Dennis Finance Solutions",
-      description:
-        "Developed a financial services platform with budgeting, expense tracking, and goal-setting tools using TailwindCSS, Livewire, and MySQL. Integrated APIs for real-time financial data and secure authentication.",
+      description: "Built a financial management platform featuring budgeting, expense tracking, and goal-setting tools using TailwindCSS, Livewire, and MySQL. Implemented secure authentication, role-based access control, and an intuitive admin panel. Developed file upload functionality for users to upload and manage financial documents and photos, with optimized display throughout the system.",
       image: dennis,
       technologies: ["TailwindCSS", "Livewire", "MySQL"],
     },
     {
       title: "Myanmar Investment Commission",
-      description:
-        "Developed and maintained an online management system for the Myanmar Investment Commission using Bootstrap, jQuery, Laravel, and MySQL — streamlining application and approval workflows.",
+      description:"Developed and maintained Supervision Department management system for the Myanmar Investment Commission using Bootstrap, jQuery, Laravel, and MySQL. The system includes Admin Management, User Management, Rank Management, and Form Management features. I was responsible for ongoing maintenance, feature improvements, and ensuring smooth workflow operations.",
       image: myino,
       technologies: ["Bootstrap", "jQuery", "Laravel", "MySQL"],
     },
@@ -246,7 +243,9 @@ export default function Experience() {
                         }}
                       />
                     ))}
+
                   </Box>
+                  
                 </CardContent>
               </Grid>
             </Grid>

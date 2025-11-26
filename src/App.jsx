@@ -8,13 +8,11 @@ import {
   CssBaseline,
   useMediaQuery,
 } from "@mui/material";
-
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import ContactForm from "./components/ContactForm";
-import Footer from "./components/Footer";
 import WorkExperience from "./components/WorkExperience";
 import Certificates from "./components/Certificates";
 import IntroSection from "./components/IntroSection";
