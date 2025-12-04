@@ -77,21 +77,21 @@ export default function Experience() {
     {
       title: "MIC Online Visa Application System",
       description:
-        "Developed an online visa application system for MIC companies using Bootstrap, jQuery, Laravel, and MySQL, featuring user-friendly forms, document uploads, and automated notifications.",
+            "Maintained and enhanced an online visa application system for MIC companies using Bootstrap, jQuery, Laravel, and MySQL. Responsibilities included improving user-facing application forms, managing document upload workflows, fixing bugs, optimizing performance, and supporting automated email notification processes to ensure smooth daily operations.",
       image: movas,
       technologies: ["Bootstrap", "jQuery", "Laravel", "MySQL"],
     },
     {
-      title: "Inventory Management System",
+      title: "Restaurant Management System",
       description:
-        "Developed and maintained a restaurant point of sale (POS) system using TailwindCSS, Livewire, and MySQL — featuring table and order management, billing, inventory tracking, and real-time sales reporting for efficient restaurant operations.",
+            "Developed and maintained a full-service Restaurant Management (POS) system using TailwindCSS, Livewire, and MySQL. Implemented table reservation handling, food ordering workflows, real-time order tracking, integrated payment processing, and inventory management to monitor stock levels. Built features for billing, receipt generation, and sales reporting, ensuring smooth daily operations and reliable data synchronization across the system.",
       image: inventory,
       technologies: ["TailwindCSS", "Livewire", "MySQL"],
     },
     {
       title: "WeDay Social Commerce Platform",
       description:
-        "Built a social commerce platform using React, MUI, and a RESTful API. Enabled users to discover, share, and purchase products within a connected community.",
+           "Developed a full-featured social commerce platform combining social media and e-commerce functionalities using React, Material UI, and a RESTful API. Implemented social feeds allowing users to create posts with photos and videos, interact through likes, reactions, and comments, and share products within the community. Built product discovery and purchasing flows tightly integrated into social content to drive user engagement and seamless shopping experiences.",
       image: wedayImage,
       technologies: ["React.js", "Material UI", "REST API"],
     },
