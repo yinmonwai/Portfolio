@@ -28,9 +28,6 @@ export default function WorkExperience() {
       sx={{
         py: 10,
         px: { xs: 3, sm: 8 },
-        backgroundColor: isDark
-          ? "rgba(18, 18, 18, 0.9)"
-          : "rgba(245, 247, 250, 0.96)",
         transition: "background-color 0.5s ease",
       }}
     >

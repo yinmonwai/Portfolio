@@ -9,6 +9,7 @@ import {
   CardContent,
   Chip,
   useTheme,
+  Link,
 } from "@mui/material";
 import { motion } from "framer-motion";
 import portfolio from "../assets/portfolio.jpg";
@@ -22,6 +23,9 @@ import inventory from "../assets/inventory2.jpg";
 import hrImage from "../assets/hr3.jpg";
 import wedayImage from "../assets/w.jpg";
 
+import GitHubIcon from "@mui/icons-material/GitHub"; // Added Icon
+import OpenInNewIcon from "@mui/icons-material/OpenInNew"; // Added Icon
+
 export default function Experience() {
   const theme = useTheme();
   const isDarkMode = theme.palette.mode === "dark";
@@ -33,65 +37,86 @@ export default function Experience() {
         "Designed and developed a personal portfolio website using React.js and MUI to showcase my projects and skills. Implemented responsive design and integrated contact forms for potential client inquiries.",
       image: portfolio,
       technologies: ["React.js", "Material UI"],
-      liveDemo: ["https://your-portfolio-link.com","https://github.com/yourusername/portfolio-website"], // optional
+      github: "https://github.com/yinmonwai/Portfolio",
+      demo: "https://github.com/yinmonwai/Portfolio",
     },
     {
       title: "Geolocation Information System",
       description:
-           "Developed and maintained a geolocation information system using Vue.js, Laravel, and MySQL. Implemented region-based search and filtering functionalities, displayed user working regions on interactive maps, and built features to insert and manage geographic region data.",
+        "Developed and maintained a geolocation information system using Vue.js, Laravel, and MySQL. Implemented region-based search and filtering functionalities, displayed user working regions on interactive maps, and built features to insert and manage geographic region data.",
       image: geolocation,
       technologies: ["Vue.js", "Laravel", "MySQL"],
+      github: "https://github.com/yinmonwai/Geo",
+      demo: "https://github.com/yinmonwai/Geo",
     },
+    
     {
       title: "ChatBot",
       description:
         "Developed and maintained an Agricultural Science chatbot using Vue.js, Laravel, and MySQL, enabling users to ask questions related to crops, farming techniques, and best practices. Built modules for data entry and management, displayed stored agricultural information to users, and processed user inputs through intelligent and interactive chat workflows.",
       image: chatbot,
       technologies: ["Vue.js", "Laravel", "MySQL"],
+      github: "https://github.com/yinmonwai/Chat",
+      demo: "https://github.com/yinmonwai/Chat",
     },
     {
       title: "Human Resource Management System",
-      description:"Developed a comprehensive HR management system using TailwindCSS, Livewire, and MySQL — implementing employee data entry modules, finance reports, personal history reports, and other HR-related reporting features. Built export functionalities for Word and Excel formats, and supported efficient employee management, attendance tracking, and role-based access control.",
+      description: "Developed a comprehensive HR management system using TailwindCSS, Livewire, and MySQL — implementing employee data entry modules, finance reports, personal history reports, and other HR-related reporting features. Built export functionalities for Word and Excel formats, and supported efficient employee management, attendance tracking, and role-based access control.",
       image: hrImage,
       technologies: ["TailwindCSS", "Livewire", "MySQL"],
+      github: "https://github.com/yinmonwai/Human-Resources",
+      demo: "https://github.com/yinmonwai/Human-Resources",
     },
     {
       title: "Custom Detained Goods Management System",
       description:
-           "Built a comprehensive detained goods management system using TailwindCSS, Livewire, and MySQL, focused on managing cases such as illegal import of firearms. Developed data entry workflows for case creation, detained items, and officer actions, along with dynamic reporting modules that allow users to view case summaries, item records, and decision histories in real time.",
+        "Built a comprehensive detained goods management system using TailwindCSS, Livewire, and MySQL, focused on managing cases such as illegal import of firearms. Developed data entry workflows for case creation, detained items, and officer actions, along with dynamic reporting modules that allow users to view case summaries, item records, and decision histories in real time.",
       image: customImage,
       technologies: ["TailwindCSS", "Livewire", "MySQL"],
+      github: "https://github.com/yinmonwai/Custom",
+      demo: "https://github.com/yinmonwai/Custom",
     },
     {
       title: "Dennis Finance Solutions",
       description: "Built a financial management platform featuring budgeting, expense tracking, and goal-setting tools using TailwindCSS, Livewire, and MySQL. Implemented secure authentication, role-based access control, and an intuitive admin panel. Developed file upload functionality for users to upload and manage financial documents and photos, with optimized display throughout the system.",
       image: dennis,
       technologies: ["TailwindCSS", "Livewire", "MySQL"],
+      github: "https://github.com/yinmonwai/My-Projects",
+      demo: "https://github.com/yinmonwai/My-Projects",
     },
+    
     {
       title: "Myanmar Investment Commission",
-      description:"Developed and maintained Supervision Department management system for the Myanmar Investment Commission using Bootstrap, jQuery, Laravel, and MySQL. The system includes Admin Management, User Management, Rank Management, and Form Management features. I was responsible for ongoing maintenance, feature improvements, and ensuring smooth workflow operations.",
+      description: "Developed and maintained Supervision Department management system for the Myanmar Investment Commission using Bootstrap, jQuery, Laravel, and MySQL. The system includes Admin Management, User Management, Rank Management, and Form Management features. I was responsible for ongoing maintenance, feature improvements, and ensuring smooth workflow operations.",
       image: myino,
       technologies: ["Bootstrap", "jQuery", "Laravel", "MySQL"],
+      github: "https://github.com/yinmonwai/IMS",
+      demo: "https://github.com/yinmonwai/IMS",
     },
+    
     {
       title: "MIC Online Visa Application System",
       description:
-            "Maintained and enhanced an online visa application system for MIC companies using Bootstrap, jQuery, Laravel, and MySQL. Responsibilities included improving user-facing application forms, managing document upload workflows, fixing bugs, optimizing performance, and supporting automated email notification processes to ensure smooth daily operations.",
+        "Maintained and enhanced an online visa application system for MIC companies using Bootstrap, jQuery, Laravel, and MySQL. Responsibilities included improving user-facing application forms, managing document upload workflows, fixing bugs, optimizing performance, and supporting automated email notification processes to ensure smooth daily operations.",
       image: movas,
       technologies: ["Bootstrap", "jQuery", "Laravel", "MySQL"],
+      github: "https://github.com/yinmonwai/MIC",
+      demo: "https://github.com/yinmonwai/MIC",
     },
     {
       title: "Restaurant Management System",
       description:
-            "Developed and maintained a full-service Restaurant Management (POS) system using TailwindCSS, Livewire, and MySQL. Implemented table reservation handling, food ordering workflows, real-time order tracking, integrated payment processing, and inventory management to monitor stock levels. Built features for billing, receipt generation, and sales reporting, ensuring smooth daily operations and reliable data synchronization across the system.",
+        "Developed and maintained a full-service Restaurant Management (POS) system using TailwindCSS, Livewire, and MySQL. Implemented table reservation handling, food ordering workflows, real-time order tracking, integrated payment processing, and inventory management to monitor stock levels. Built features for billing, receipt generation, and sales reporting, ensuring smooth daily operations and reliable data synchronization across the system.",
       image: inventory,
       technologies: ["TailwindCSS", "Livewire", "MySQL"],
+      github: "https://github.com/yinmonwai/Inventory",
+      demo: "https://github.com/yinmonwai/Inventory",
     },
+   
     {
       title: "WeDay Social Commerce Platform",
       description:
-           "Developed a full-featured social commerce platform combining social media and e-commerce functionalities using React, Material UI, and a RESTful API. Implemented social feeds allowing users to create posts with photos and videos, interact through likes, reactions, and comments, and share products within the community. Built product discovery and purchasing flows tightly integrated into social content to drive user engagement and seamless shopping experiences.",
+        "Developed a full-featured social commerce platform combining social media and e-commerce functionalities using React, Material UI, and a RESTful API. Implemented social feeds allowing users to create posts with photos and videos, interact through likes, reactions, and comments, and share products within the community. Built product discovery and purchasing flows tightly integrated into social content to drive user engagement and seamless shopping experiences.",
       image: wedayImage,
       technologies: ["React.js", "Material UI", "REST API"],
     },
@@ -185,7 +210,7 @@ export default function Experience() {
               </Grid>
 
               {/* Description */}
-              <Grid item xs={12} md={7}>    
+              <Grid item xs={12} md={7}>
                 <CardContent
                   sx={{
                     color: isDarkMode ? "#f5f5f5" : "#333",
@@ -243,9 +268,47 @@ export default function Experience() {
                         }}
                       />
                     ))}
+                    
+                    {project.github && (
+                      <Link
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener"
+                        underline="hover"
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 1,
+                          color: isDarkMode ? "#90caf9" : "#1976d2",
+                          fontWeight: 500,
+                          cursor: "pointer",
+                        }}
+                      >
+                        <GitHubIcon fontSize="small" /> Code
+                      </Link>
+                    )}
 
+                    {project.demo && (
+                      <Link
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener"
+                        underline="hover"
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 1,
+                          color: isDarkMode ? "#90caf9" : "#1976d2",
+                          fontWeight: 500,
+                          cursor: "pointer",
+                        }}
+                      >
+                        <OpenInNewIcon fontSize="small" /> Live Demo
+                      </Link>
+                    )}
+                   
                   </Box>
-                  
+
                 </CardContent>
               </Grid>
             </Grid>

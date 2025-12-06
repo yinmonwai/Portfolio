@@ -1,11 +1,8 @@
 import React, { useMemo, useState } from "react";
 import {
-  AppBar,
-  Toolbar,
   Typography,
   Container,
   Box,
-  IconButton,
   CssBaseline,
   Grid,
   Card,
@@ -14,7 +11,6 @@ import {
   createTheme,
   ThemeProvider,
   useMediaQuery,
-  Button,
 } from "@mui/material";
 import { LightMode, DarkMode, Menu } from "@mui/icons-material";
 import { motion } from "framer-motion";
@@ -101,11 +97,11 @@ export default function About() {
             justifyContent="center"
           >
             {/* Left - Image */}
-            <Grid item xs={12} md={5}>
+                 <Grid item xs={12} md={5}>
               <motion.div
                 initial={{ opacity: 0, x: -60 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
                 <Box display="flex" justifyContent="center">
@@ -113,28 +109,35 @@ export default function About() {
                     sx={{
                       borderRadius: "50%",
                       overflow: "hidden",
-                      width: { xs: 100, sm: 150, md: 200 },
-                      height: { xs: 150, sm: 200, md: 200 },
+
+                      width: { xs: 140, sm: 180, md: 220 },
+                      height: { xs: 140, sm: 180, md: 220 },
+
+                      border:
+                        mode === "light"
+                          ? "4px solid rgba(25,118,210,0.3)"
+                          : "4px solid rgba(144,202,249,0.3)",
+
                       boxShadow:
                         mode === "light"
-                          ? "0 8px 30px rgba(0,0,0,0.15)"
-                          : "0 8px 40px rgba(255,255,255,0.1)",
-                   
+                          ? "0px 12px 35px rgba(0,0,0,0.15)"
+                          : "0px 12px 40px rgba(255,255,255,0.12)",
+
+                      transition: "transform 0.35s ease",
+
                       "&:hover": {
-                        transform: "scale(1.05)",
-                        transition: "transform 0.4s ease",
+                        transform: "scale(1.07)",
                       },
                     }}
                   >
                     <CardMedia
                       component="img"
-                      image={about.image}
+                      src={about.image}
                       alt="Profile"
                       sx={{
                         width: "100%",
                         height: "100%",
                         objectFit: "cover",
-                        borderRadius: "50% / 50%", // makes a smooth oval shape
                       }}
                     />
                   </Card>
