@@ -13,7 +13,7 @@ const experiences = [
   {
     role: "Web Developer",
     company: "MyDay Thu Kyawal Co. Ltd",
-    years: "2024 - Present",
+    years: "2024 - 30-11-2025",
     logo: "/company2.png",
   },
 ];
