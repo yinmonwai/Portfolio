@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Typography, Grid, Button } from "@mui/material";
 import { motion } from "framer-motion";
-import cvFile from "../assets/yinmonwai-cv.pdf";
+import cvFile from "../assets/yin-mon-wai-cv.pdf";
 export default function IntroSection({ mode = "light" }) {
   return (
     <Box
