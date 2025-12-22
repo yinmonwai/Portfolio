@@ -12,7 +12,6 @@ import {
   ThemeProvider,
   useMediaQuery,
 } from "@mui/material";
-import { LightMode, DarkMode, Menu } from "@mui/icons-material";
 import { motion } from "framer-motion";
 import profile from "../assets/profile2.jpg";
 
@@ -49,7 +48,7 @@ export default function About() {
 
   const about = {
     description:
-      "I’m a Full Stack Web Developer with experience in building responsive and scalable web applications. Highly skilled and dedicated web developer with a strong background in HTML, CSS, Bootstrap, TailwindCSS, and JavaScript. Proficient in Oracle SQL and experienced in PHP programming, Laravel, Livewire, MySQL, and Laravel with APIs. Possess extensive knowledge of ReactJS, MUI, Ant Design, Shadcn, Next.js, Node.js, and MongoDB. Knowledgeable in Postman for testing backend APIs. Committed to delivering top-quality web solutions, version control with Git and GitHub, and collaboration using Microsoft Teams, Bitbucket, and ClickUp. I enjoy solving problems and writing clean, maintainable code with a focus on modern, user-friendly solutions that work across devices.",
+      "I’m a Full Stack Web Developer with experience in building responsive and scalable web applications. Highly skilled and dedicated web developer with a strong background in HTML, CSS, Bootstrap, TailwindCSS, and JavaScript. Proficient in Oracle SQL and experienced in PHP programming, Laravel, Livewire, MySQL, and Laravel with APIs. Possess extensive knowledge of ReactJS, MUI, Ant Design, Shadcn, Next.js, Node.js,express.js and MongoDB. Knowledgeable in Postman for testing backend APIs. Committed to delivering top-quality web solutions, version control with Git and GitHub, and collaboration using Microsoft Teams, Bitbucket, and ClickUp. I enjoy solving problems and writing clean, maintainable code with a focus on modern, user-friendly solutions that work across devices.",
     image: profile,
   };
 
