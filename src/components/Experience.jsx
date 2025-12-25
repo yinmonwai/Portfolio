@@ -22,7 +22,8 @@ import movas from "../assets/movas1.jpg";
 import inventory from "../assets/inventory2.jpg";
 import hrImage from "../assets/hr3.jpg";
 import wedayImage from "../assets/w.jpg";
-
+import testing from "../assets/reactnative-testing.jpg";
+import login from "../assets/login1.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub"; // Added Icon
 import OpenInNewIcon from "@mui/icons-material/OpenInNew"; // Added Icon
 
@@ -49,7 +50,7 @@ export default function Experience() {
       github: "https://github.com/yinmonwai/Geo",
       demo: "https://github.com/yinmonwai/Geo",
     },
-    
+
     {
       title: "ChatBot",
       description:
@@ -84,7 +85,7 @@ export default function Experience() {
       github: "https://github.com/yinmonwai/My-Projects",
       demo: "https://github.com/yinmonwai/My-Projects",
     },
-    
+
     {
       title: "Myanmar Investment Commission",
       description: "Developed and maintained Supervision Department management system for the Myanmar Investment Commission using Bootstrap, jQuery, Laravel, and MySQL. The system includes Admin Management, User Management, Rank Management, and Form Management features. I was responsible for ongoing maintenance, feature improvements, and ensuring smooth workflow operations.",
@@ -93,7 +94,7 @@ export default function Experience() {
       github: "https://github.com/yinmonwai/IMS",
       demo: "https://github.com/yinmonwai/IMS",
     },
-    
+
     {
       title: "MIC Online Visa Application System",
       description:
@@ -112,7 +113,24 @@ export default function Experience() {
       github: "https://github.com/yinmonwai/Inventory",
       demo: "https://github.com/yinmonwai/Inventory",
     },
-   
+    {
+      title: "Yaycha Social Media Design",
+      description:
+        "A social media interface experiment focused on user authentication and engagement flows. Developed a clean UI featuring secure Login and Registration systems, a dynamic comment section, and real-time relative timestamps for posts. Built with a focus on component reusability and responsive design principles.",
+      image: login, 
+      technologies: ["ReactJS", "Material UI", "JavaScript"],
+      github: "https://github.com/yinmonwai/Inventory", // Update if you have a specific repo for this
+      demo: "https://github.com/yinmonwai/Inventory",
+    },
+    {
+      title: "Payment System (Mobile)",
+      description:
+        "A mobile financial application design developed with React Native Expo. The app features a streamlined user interface for digital transactions, including peer-to-peer transfers, QR code scanning capabilities, and a 'Fix Rate' currency conversion tool. It includes a comprehensive transaction history log to track user spending and incoming payments with a focus on mobile-first UX.",
+      image: testing,
+      technologies: ["React Native", "Expo", "JavaScript"],
+      github: "https://github.com/yinmonwai/Inventory",
+      demo: "https://github.com/yinmonwai/Inventory",
+    },
     {
       title: "WeDay Social Commerce Platform",
       description:
@@ -268,7 +286,7 @@ export default function Experience() {
                         }}
                       />
                     ))}
-                    
+
                     {project.github && (
                       <Link
                         href={project.github}
@@ -306,7 +324,7 @@ export default function Experience() {
                         <OpenInNewIcon fontSize="small" /> Live Demo
                       </Link>
                     )}
-                   
+
                   </Box>
 
                 </CardContent>
