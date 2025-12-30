@@ -180,8 +180,7 @@ const experiences = [
     logo: "/company2.png",
     description: [
       "Developed the WeDay Social Commerce Platform.",
-      "Built social feeds, reactions, comments, and product-sharing features.",
-      "Integrated RESTful APIs for social interactions and e-commerce workflows.",
+      "Built social feeds, reactions, comments, product-sharing features and Integrated RESTful APIs for social interactions and e-commerce workflows.",
     ],
     technologies: ["React", "Material UI", "JavaScript", "REST API"],
   },
