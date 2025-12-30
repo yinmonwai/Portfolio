@@ -26,6 +26,8 @@ import testing from "../assets/reactnative-testing.jpg";
 import login from "../assets/login1.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub"; // Added Icon
 import OpenInNewIcon from "@mui/icons-material/OpenInNew"; // Added Icon
+import assignment from "../assets/assignment.jpg"
+import ecommerce from "../assets/e1.jpg"
 
 export default function Experience() {
   const theme = useTheme();
@@ -116,20 +118,20 @@ export default function Experience() {
     {
       title: "Yaycha Social Media Design",
       description:
-        "A social media interface experiment focused on user authentication and engagement flows. Developed a clean UI featuring secure Login and Registration systems, a dynamic comment section, and real-time relative timestamps for posts. Built with a focus on component reusability and responsive design principles.",
-      image: login, 
+        "A social media interface experiment focused on user authentication and engagement flows. Developed a clean UI featuring secure Login and Registration systems, a dynamic comment section, and real-time relative timestamps for posts. Built with a focus on component reusability and responsive design principles.This project is my testing project",
+      image: login,
       technologies: ["ReactJS", "Material UI", "JavaScript"],
-      github: "https://github.com/yinmonwai/Inventory", // Update if you have a specific repo for this
-      demo: "https://github.com/yinmonwai/Inventory",
+      // github: "https://github.com/yinmonwai/Inventory",
+      // demo: "https://github.com/yinmonwai/Inventory",
     },
     {
-      title: "Payment System (Mobile)",
+      title: "Account Management System Design",
       description:
-        "A mobile financial application design developed with React Native Expo. The app features a streamlined user interface for digital transactions, including peer-to-peer transfers, QR code scanning capabilities, and a 'Fix Rate' currency conversion tool. It includes a comprehensive transaction history log to track user spending and incoming payments with a focus on mobile-first UX.",
-      image: testing,
-      technologies: ["React Native", "Expo", "JavaScript"],
-      github: "https://github.com/yinmonwai/Inventory",
-      demo: "https://github.com/yinmonwai/Inventory",
+        "Designed and developed an account management system as a testing project using ReactJS, Material UI, JavaScript, and a ThinkPHP RESTful API. Implemented complete authentication workflows including user registration, login, logout, and a protected dashboard. Integrated access token and refresh token logic on the React frontend to securely maintain user sessions and handle token expiration. Focused on clean UI design, reusable components, and secure API communication.",
+      image: assignment,
+      technologies: ["ReactJS", "Material UI", "JavaScript", "ThinkPHP API"],
+      github: "https://github.com/yinmonwai/React-Assignment",
+      demo: "https://github.com/yinmonwai/React-Assignment",
     },
     {
       title: "WeDay Social Commerce Platform",
@@ -138,8 +140,25 @@ export default function Experience() {
       image: wedayImage,
       technologies: ["React.js", "Material UI", "REST API"],
     },
+    {
+      title: "Payment System (ReactNative Mobile)",
+      description:
+        "A mobile financial application design developed with React Native Expo. The app features a streamlined user interface for digital transactions, including peer-to-peer transfers, QR code scanning capabilities, and a 'Fix Rate' currency conversion tool. It includes a comprehensive transaction history log to track user spending and incoming payments with a focus on mobile-first UX.This is my testing project",
+      image: testing,
+      technologies: ["React Native", "Expo", "JavaScript"],
+      // github: "https://github.com/yinmonwai/Inventory",
+      // demo: "https://github.com/yinmonwai/Inventory",
+    },
+    {
+      title: "E-Commerce Mobile Application (Freelance Project)",
+      description:
+        "Developed a full-featured e-commerce mobile application as a freelance project using React Native, Expo, JavaScript, and a Laravel RESTful API. Implemented core shopping features including a modern home page design, product listing and shop flow, product detail pages, shopping bag (cart) management, favourites (wishlist), and user profile management. Focused on smooth user experience, clean UI, and seamless API integration for real-time product and user data.",
+      image: ecommerce,
+      technologies: ["React Native", "Expo", "JavaScript", "Laravel API"],
+      github: "https://github.com/yinmonwai/Ecommerce-App",
+      demo: "https://github.com/yinmonwai/Ecommerce-App",
+    }
   ];
-
   return (
     <Box
       id="experience"
