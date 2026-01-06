@@ -121,8 +121,8 @@ export default function Experience() {
         "A social media interface experiment focused on user authentication and engagement flows. Developed a clean UI featuring secure Login and Registration systems, a dynamic comment section, and real-time relative timestamps for posts. Built with a focus on component reusability and responsive design principles.This project is my testing project",
       image: login,
       technologies: ["ReactJS", "Material UI", "JavaScript"],
-      // github: "https://github.com/yinmonwai/Inventory",
-      // demo: "https://github.com/yinmonwai/Inventory",
+      github: "https://github.com/yinmonwai/YayCha",
+      demo: "https://yay-cha-drab.vercel.app/",
     },
     {
       title: "Account Management System Design",
@@ -131,7 +131,7 @@ export default function Experience() {
       image: assignment,
       technologies: ["ReactJS", "Material UI", "JavaScript", "ThinkPHP API"],
       github: "https://github.com/yinmonwai/React-Assignment",
-      demo: "https://github.com/yinmonwai/React-Assignment",
+      demo: "https://github.com/yinmonwai/Assignment-API",
     },
     {
       title: "WeDay Social Commerce Platform",
