@@ -154,7 +154,7 @@ export default function About() {
               >
                 <CardContent
                   sx={{
-                    textAlign: { xs: "center", md: "left" },
+                    textAlign: { xs: "center", md: "left" },   
                     maxWidth: 600,
                     mx: { xs: "auto", md: 0 },
                     px: { xs: 2, md: 4 },

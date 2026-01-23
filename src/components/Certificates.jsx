@@ -5,8 +5,8 @@ import { FaCertificate, FaUniversity } from "react-icons/fa";
 
 const certificates = [
   {
-    title: "B.Sc. in Computer Science",
-    issuer: "Third Year, University of Computer Studies (Monywa)",
+    title: "B.C.SC in Computer Science",
+    issuer: "University of Computer Studies (Monywa)",
     icon: <FaUniversity size={30} color="#00bcd4" />,
   },
   {
