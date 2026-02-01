@@ -33,7 +33,7 @@ const experiences = [
   {
     role: "Web Developer",
     company: "MyDay Thu Kyawal Co. Ltd",
-    years: "2024 - Present",
+    years: "2024 - December 2025",
     logo: "/company2.png",
     description: [
       "Developed the WeDay Social Commerce Platform.",
