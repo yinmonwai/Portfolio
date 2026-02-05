@@ -99,9 +99,7 @@ export default function App() {
           <Box id="contact" sx={{ scrollMarginTop: "50px" }}>
             <ContactForm />
           </Box>
-        </Container>
-
-        
+        </Container> 
         {/* <Footer /> */}
       </Box>
     </ThemeProvider>

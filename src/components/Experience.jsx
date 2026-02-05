@@ -146,8 +146,8 @@ export default function Experience() {
         "A mobile financial application design developed with React Native Expo. The app features a streamlined user interface for digital transactions, including peer-to-peer transfers, QR code scanning capabilities, and a 'Fix Rate' currency conversion tool. It includes a comprehensive transaction history log to track user spending and incoming payments with a focus on mobile-first UX.This is my testing project",
       image: testing,
       technologies: ["React Native", "Expo", "JavaScript"],
-      // github: "https://github.com/yinmonwai/Inventory",
-      // demo: "https://github.com/yinmonwai/Inventory",
+      github: "https://github.com/yinmonwai/Ypay",
+      demo: "https://github.com/yinmonwai/Ypay",
     },
     {
       title: "E-Commerce Mobile Application (Freelance Project)",
@@ -281,7 +281,6 @@ export default function Experience() {
                   >
                     {project.description}
                   </Typography>
-
                   {/* Technologies */}
                   <Box
                     sx={{
@@ -343,7 +342,6 @@ export default function Experience() {
                         <OpenInNewIcon fontSize="small" /> Live Demo
                       </Link>
                     )}
-
                   </Box>
 
                 </CardContent>
