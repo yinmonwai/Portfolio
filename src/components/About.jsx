@@ -13,7 +13,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import { motion } from "framer-motion";
-import profile from "../assets/profile2.jpg";
+import profile from "../assets/ymw.png";
 
 export default function About() {
   // Theme setup

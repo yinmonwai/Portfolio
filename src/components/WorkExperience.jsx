@@ -33,13 +33,24 @@ const experiences = [
   {
     role: "Web Developer",
     company: "MyDay Thu Kyawal Co. Ltd",
-    years: "2024 - December 2025",
+    years: "2024 - 2025",
     logo: "/company2.png",
     description: [
       "Developed the WeDay Social Commerce Platform.",
       "Built social feeds, reactions, comments, product-sharing features and Integrated RESTful APIs for social interactions and e-commerce workflows.",
     ],
     technologies: ["React", "Material UI", "JavaScript", "REST API"],
+  },
+   {
+    role: "Web Developer",
+    company: "Myanmar Software Integrated Solution Co. Ltd",
+    years: "2025 - Present",
+    logo: "/company3.png",
+    description: [
+      "Working on various web and mobile development projects.",
+      "Toyota Aye & Sons,AungZabu Admin,Awabar Mobile App",
+    ],
+    technologies: ["NextJS", "Tailwindcss", "TypeScript","ReactNative","Prisma","NestJs", "PostgreSQL"],
   },
 ];
 
